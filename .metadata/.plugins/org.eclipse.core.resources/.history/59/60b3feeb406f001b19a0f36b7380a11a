@@ -1,0 +1,14 @@
+/*
+ * 005spi_tx_testing.c
+ *
+ *  Created on: 15-Feb-2021
+ *      Author: sande
+ */
+#include"stm32f407xx_spi_driver.h"
+
+
+void main(void)
+{
+	return 0;
+}
+

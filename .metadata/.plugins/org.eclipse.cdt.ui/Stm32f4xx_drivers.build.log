@@ -1,0 +1,21 @@
+11:48:55 **** Incremental Build of configuration Debug for project Stm32f4xx_drivers ****
+make -j8 all 
+arm-none-eabi-gcc "../driver/Src/stm32f407xx_gpio_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I"C:/Users/sande/Documents/Documents/documents/iitk/MCU1_Course/MCU1_COURSE/MCU1/Stm32f4xx_drivers/driver/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"driver/Src/stm32f407xx_gpio_driver.d" -MT"driver/Src/stm32f407xx_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "driver/Src/stm32f407xx_gpio_driver.o"
+arm-none-eabi-gcc "../Src/004led_button_interrupt.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I"C:/Users/sande/Documents/Documents/documents/iitk/MCU1_Course/MCU1_COURSE/MCU1/Stm32f4xx_drivers/driver/Inc" -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/004led_button_interrupt.d" -MT"Src/004led_button_interrupt.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/004led_button_interrupt.o"
+arm-none-eabi-gcc -o "Stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sande\Documents\Documents\documents\iitk\MCU1_Course\MCU1_COURSE\MCU1\Stm32f4xx_drivers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Stm32f4xx_drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Stm32f4xx_drivers.elf  > "Stm32f4xx_drivers.list"
+arm-none-eabi-objcopy  -O binary  Stm32f4xx_drivers.elf  "Stm32f4xx_drivers.bin"
+arm-none-eabi-size   Stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2616	      8	   1568	   4192	   1060	Stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Stm32f4xx_drivers.bin
+Finished building: Stm32f4xx_drivers.list
+ 
+ 
+
+11:48:56 Build Finished. 0 errors, 0 warnings. (took 792ms)
+

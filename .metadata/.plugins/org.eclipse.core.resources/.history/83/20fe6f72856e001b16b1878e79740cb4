@@ -1,0 +1,66 @@
+/*
+ * stm32f407xx_spi_driver.c
+ *
+ *  Created on: 14-Feb-2021
+ *      Author: sande
+ */
+
+// SPI clock configuration
+
+/******************************************************************************************
+ *
+ * @fn             -
+ *
+ * @Brief          -
+ *
+ * @Param[in]      -
+ * @Param[in]      -
+ * @Param[in]      -
+ *
+ * @Return         -
+ *
+ * @Note           -
+ *
+ */
+void SPI_PeriClockControl(SPI_RegDef_t *pSPIx, uint8_t EnorDi)
+{
+
+}
+
+// SPI Initialization and Deinitialization
+
+void SPI_Init(SPI_RegDef_t *pSPIHandle)
+{
+
+}
+void SPI_DeInit(SPI_RegDef_t *pSPIx)
+{
+
+}
+
+// SPI send and receive data
+
+void SPI_SendData(SPI_RegDef_t *pSPIx, uint8_t *pTxBuffer, uint32_t len)
+{
+
+}
+void SPI_ReceiveData(SPI_RegDef_t *pSPIx, uint8_t *pRxBuffer, uint32_t len)
+{
+
+}
+
+
+// SPI interrupt configuratiion and handling
+
+void SPI_IRQInterruptConfig(uint8_t IRQNumber, uint8_t EnorDi)
+{
+
+}
+void SPI_IRQInterruptPriority(uint8_t IRQNumber, uint8_t IRQPriority)
+{
+
+}
+void SPI_IRQHandle(SPI_Handle_t *pSPIx)
+{
+
+}
